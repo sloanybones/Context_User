@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
 import { BrowserRouter, } from "react-router-dom";
+import UserProvider from "./providers/UserProvider";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <UserProvider>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
+  </UserProvider>,
   document.getElementById('root')
 );
 

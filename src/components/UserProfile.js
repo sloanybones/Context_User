@@ -1,11 +1,11 @@
-import Account from "./Account";
-import AccountForm from "./AccountForm";
+import User from "./User";
+import UserForm from "./UserForm";
 
-const AccountProfile = () => (
+const UserProfile = () => (
   <>
-    <Account />
-    <AccountForm />
+    <User />
+    <UserForm/>
   </>
 );
 
-export default AccountProfile;
+export default UserProfile;
